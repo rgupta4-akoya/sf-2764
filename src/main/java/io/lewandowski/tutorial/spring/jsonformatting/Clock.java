@@ -1,10 +1,6 @@
 package io.lewandowski.tutorial.spring.jsonformatting;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.*;
 
 public final class Clock {
 
@@ -12,12 +8,12 @@ public final class Clock {
 
     private final LocalTime localTime;
 
-    private final LocalDateTime localDateTime;
+    private final Instant localDateTime;
 
     public Clock() {
         this.localDate = LocalDate.of(2016, 1, 1);
         this.localTime = LocalTime.of(10, 24);
-        this.localDateTime = LocalDateTime.of(localDate, localTime);
+        this.localDateTime = Instant.now();
     }
 
     public LocalDate getLocalDate() {
@@ -28,7 +24,7 @@ public final class Clock {
         return localTime;
     }
 
-    public LocalDateTime getLocalDateTime() {
+    public Instant getLocalDateTime() {
         return localDateTime;
     }
 
