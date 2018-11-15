@@ -20,7 +20,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 import static java.time.format.DateTimeFormatter.ofPattern;
-/*
+
 
 @Configuration
 @EnableSwagger2
@@ -55,5 +55,4 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                 .build();
     }
 }
-*/
 
