@@ -12,4 +12,9 @@ public class Controller {
         return new Clock();
     }
 
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String sayHello() {
+        return "hello";
+    }
+
 }
